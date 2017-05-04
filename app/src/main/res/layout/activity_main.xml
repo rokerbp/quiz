@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="unico.app.roker.com.quiz.MainActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="28dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/score_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="29dp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="0.16"
+        android:padding="8dp"
+        android:text="Pregunta 1"
+        android:textSize="28dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/asd">
+
+        <Button
+            android:id="@+id/choice1"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:background="#8091EA"
+            android:padding="8dp"
+            android:text="primera"
+            android:textColor="#FFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+        />
+
+        <Button
+            android:id="@+id/choice2"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#8091EA"
+            android:padding="8dp"
+            android:text="segunda"
+            android:textColor="#FFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choice1" />
+
+        <Button
+            android:id="@+id/choice3"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#8091EA"
+            android:padding="8dp"
+            android:text="tercera"
+            android:textColor="#FFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choice2" />
+
+        <Button
+            android:id="@+id/choice4"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#8091EA"
+            android:padding="8dp"
+            android:text="cuarta"
+            android:textColor="#FFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choice3" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
